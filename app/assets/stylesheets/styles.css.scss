@@ -1,0 +1,28 @@
+/* This section of code allows one to change fonts
+$baseFontFamily: Oxygen;
+@import url(ttp://fonts.googleapis.com/css?family=Oxygen); */
+
+
+$navbarBrandColor: orange;
+$btnPrimaryBackground: green;
+$navbarBackground: white;
+$navbarBackgroundHighlgith: white;
+
+@import 'bootstrap';
+body {
+padding-top: 60px}
+@import 'bootstrap-responsive';
+.navbar-inner {
+	
+	@include box-shadow(none !important);
+	border: 0;
+}
+
+
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
