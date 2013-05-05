@@ -184,3 +184,6 @@ doc/
 .idea
 =======
 .idea
+
+# ignore paperclick uploaded files
+/public/system
