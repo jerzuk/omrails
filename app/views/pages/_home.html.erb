@@ -1,0 +1,17 @@
+
+<% if user_signed_in? %>
+	<strong>
+		Check out these images
+	</strong>
+<% else %>
+<div class="hero-unit">
+
+		<h1>Yee-Haw: One Month Rails!</h1>
+		<br>
+
+		<p>
+			<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large btn-block" %>
+
+		</p>
+</div>
+<% end %>
