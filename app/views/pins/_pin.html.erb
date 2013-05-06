@@ -1,3 +1,24 @@
+<div class="box">
+	<%= link_to (image_tag pin.image (:medium)), pin %>
+		<p class="description">
+	    <%= pin.description %>
+		</p>
+		<p>
+			<strong>
+				Posted by <%= pin.user.name %>
+			</strong>
+		</p>
+		<p>
+	        <% if current_user == pin.user %>
+		    <%= link_to 'Edit', edit_pin_path(pin) %>
+		    <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</p>	
+	<% end %>
+</div>
+
+
+<% if false %>
+Note: the partial for the old table structure that was used to show pins. Same code was pasted above with table references removed
 <tr>
     <td><%= image_tag pin.image (:medium) %></td>
     <td><%= pin.description %></td>
@@ -7,3 +28,4 @@
 		    <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 		    <% end %>
 </tr>
+<% end %>

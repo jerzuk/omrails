@@ -1,5 +1,13 @@
-<h1>Listing pins</h1>
 
+
+
+<div id="pins">
+	<%= render @pins %>
+</div>
+
+<% if false %>
+Note: the old way of showing pins using a table which was created by devise (JZ thinks)
+<h1>Listing pins</h1>
 <table class="table table-striped">
 
   <thead>
@@ -21,3 +29,4 @@
 <br />
 
 <%= link_to 'New Pin', new_pin_path %>
+<% end %>
