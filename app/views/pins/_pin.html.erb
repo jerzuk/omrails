@@ -4,9 +4,12 @@
 	    <%= pin.description %>
 		</p>
 		<p>
+		<small>
 			<strong>
 				Posted by <%= pin.user.name %>
 			</strong>
+			Created at <%= pin.created_at %>
+		</small>
 		</p>
 		<p>
 	        <% if current_user == pin.user %>
