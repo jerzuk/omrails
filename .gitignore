@@ -187,3 +187,6 @@ doc/
 
 # ignore paperclick uploaded files
 /public/system
+
+# ignore sampleimages
+/sampleimages
