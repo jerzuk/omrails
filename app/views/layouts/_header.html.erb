@@ -11,14 +11,13 @@
     </a>
      
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <%= link_to "OMRails", root_path, class: "brand" %>
+    <b><%= link_to "A Little Pin Board", root_path, class: "brand" %></b>
      
     <!-- Everything you want hidden at 940px or less, place within here -->
     <div class="nav-collapse collapse">
     	<ul class="nav">
-    		<li><%= link_to "Home", root_path %></li>
+    		<li><%= link_to "Pins", root_path %></li>
     		<li><%= link_to "About", about_path %></li>
-            <li><%= link_to "Pins", pins_path %></li>
     	</ul>
     	<ul class="nav pull-right">
             <% if user_signed_in? %>
